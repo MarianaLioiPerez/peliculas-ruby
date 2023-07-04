@@ -1,0 +1,32 @@
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+
+.campos{
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-size: 40pt;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 70px !important;
+}
+
+.serie{
+    background-color: #191825;
+}
+
+.campos{
+    color: #B4E4FF;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+}
+
+.TNserie{
+    color:#865DFF !important;
+}
+

@@ -1,0 +1,29 @@
+
+<div cllass="">
+<h1 class="TSi">Lista de Series</h1>
+<i class="fa-solid fa-tv-retro fa-bounce fa-4x" style="color: black;"></i>
+</div>
+
+<div>
+  <div>
+    <table class="table">
+      <thead>
+        <tr>
+        <th scope="col">Título</th>
+        <th scope="col">Synopsis</th>
+        <th scope="col">Director</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @series.each do |serie| %>
+        <tr>
+          <td><%= serie.name %></td>
+          <td><%= serie.synopsis %></td>
+          <td><%= serie.director %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
+

@@ -1,0 +1,11 @@
+<h1>Documentary</h1>
+
+<ul>
+  <% @documentary_films.each do |documentary| %>
+    <li>
+      <strong>Nombre:</strong> <%= documentary_film.name %>
+      <strong>Sinopsis:</strong> <%= documentary_film.synopsis %>
+      <strong>Director:</strong> <%= documentary_film.director %>
+    </li>
+  <% end %>
+</ul>

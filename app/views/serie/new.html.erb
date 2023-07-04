@@ -1,0 +1,31 @@
+
+<body class="serie">
+    <h1 class="TNserie">Ingresa datos de nueva Serie</h1>
+    <br><br>
+
+    <div class="container w-75">
+      
+      <div>
+        <%= form_with(model: @series) do |form| %>
+        <!-- Campos del formulario -->
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :name %></div>
+          <div class="campo"><%= form.text_field :name %></div>
+          </div>
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :synopsis%></div>
+          <div class="campo"><%= form.text_area :synopsis %></div>
+          </div>
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :director%></div>
+          <div class="campo"><%= form.text_field :director %></div>
+          </div>
+
+          <div class="campos">
+            <!-- Botón de enviar -->
+            <%= form.submit "Enviar" %>
+            <%end %>
+          </div>
+      </div>
+    </div>
+</body>

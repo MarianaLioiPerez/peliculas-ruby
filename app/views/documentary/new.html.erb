@@ -1,0 +1,16 @@
+<h1>Documentary#new</h1>
+
+<%= form_with(model: @documentary_film) do |form| %>
+  <!-- Campos del formulario -->
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :synopsis %>
+  <%= form.text_area :synopsis %>
+
+  <%= form.label :director %>
+  <%= form.text_field :director %>
+
+  <!-- Botón de enviar -->
+  <%= form.submit "Enviar" %>
+  <%end %>

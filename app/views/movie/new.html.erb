@@ -1,0 +1,18 @@
+<h1>Ingresa datos de nueva Pelicula</h1>
+<br><br>
+
+
+<%= form_with(model: @movies) do |form| %>
+  <!-- Campos del formulario -->
+  <%= form.label :name %>
+  <%= form.text_field :name %>
+
+  <%= form.label :synopsis %>
+  <%= form.text_area :synopsis %>
+
+  <%= form.label :director %>
+  <%= form.text_field :director %>
+
+  <!-- Botón de enviar -->
+  <%= form.submit "Enviar" %>
+  <%end %>
