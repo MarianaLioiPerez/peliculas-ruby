@@ -1,11 +1,36 @@
-<h1>Movies</h1>
+<body class="movie-body-index">
 
-<ul>
-  <% @movies.each do |movie| %>
-    <li>
-      <strong>Nombre:</strong> <%= movie.name %>
-      <strong>Sinopsis:</strong> <%= movie.synopsis %>
-      <strong>Director:</strong> <%= movie.director %>
-    </li>
-  <% end %>
-</ul>
+<div class="titulo-seccion mt-0">
+    <div class="tmovie container-fluid text-center pt-3">
+      <div>
+      <i class="fa-solid fa-camera-movie fa-beat"><i class="fa-solid fa-video fa-2x icono3 d-inline"></i></i>
+      <h1 class="titulo-movie-index d-inline container">Lista de Peliculas</h1>
+      </div>
+    </div>
+</div>
+
+
+  <div class="container">
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+          <th scope="col">Título</th>
+          <th scope="col">Synopsis</th>
+          <th scope="col">Director</th>
+          </tr>
+        </thead>
+        <tbody class="texto-body">
+          <% @movies.each do |movie| %>
+          <tr>
+            <td><%= movie.name %></td>
+            <td><%= movie.synopsis %></td>
+            <td><%= movie.director %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+</body>

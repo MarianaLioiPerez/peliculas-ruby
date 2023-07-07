@@ -1,13 +1,37 @@
-body{
-    font-family: 'Ubuntu', sans-serif;
-}
+/* SERIE */
+
+
+/* SERIE ---- index */
 
 
 
-.campos{
+.tserie{
+    background-color:#065471;
+    height: 90px;
     margin-bottom: 40px;
-    text-align: center;
 }
+
+.titulo-serie-index {
+    color:#E1EEDD!important;
+    margin-top: 0px;
+}
+
+.icono{
+    margin-right: 20px;
+    color:#E1EEDD!important;
+
+}
+
+.margen-h1{
+    vertical-align: middle;
+    margin-top: 0px;
+}
+
+.tabla-contenido{
+    background-color: red;
+}
+
+
 
 h1{
     text-align: center;
@@ -17,16 +41,61 @@ h1{
 }
 
 .serie{
-    background-color: #191825;
+    background-color: #065471;
 }
 
 .campos{
-    color: #B4E4FF;
+    color:#FFEADD;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 400;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 .TNserie{
-    color:#865DFF !important;
+    color: #E1EEDD !important;
+    text-align: center;
 }
 
+
+/* SERIE -- final */
+
+
+/* DOCUMENTAL */
+
+.documental{
+  background-color: #DB005B ;
+  color:  #FFEADD;
+}
+
+.tdocumentary{
+    background-color: #DB005B;
+    color:#FFEADD;
+    height: 90px;
+    margin-bottom: 40px;
+}
+
+.icono-documentary{
+    color:#FFEADD;
+    margin-right: 20px;
+}
+
+/* DOCUMENTAL FINAL */
+
+
+.tmovie {
+    background-color: #6527BE;
+    color:#FAF0E4;
+    height: 90px;
+    margin-bottom: 40px;
+}
+
+.icono3{
+    color:#FAF0E4 !important;
+    margin-right: 0px;
+}
+
+.movie{
+    background-color:#6527BE ;
+    color:#FAF0E4;
+}

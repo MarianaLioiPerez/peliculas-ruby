@@ -1,16 +1,31 @@
-<h1>Documentary#new</h1>
 
-<%= form_with(model: @documentary_film) do |form| %>
-  <!-- Campos del formulario -->
-  <%= form.label :name %>
-  <%= form.text_field :name %>
+<body class="documental">
+    <h1 class="TNdocu container w-75">Ingresa datos de nuevo Documental</h1>
+    <br><br>
 
-  <%= form.label :synopsis %>
-  <%= form.text_area :synopsis %>
+    <div class="container w-75">
+      
+      <div>
+        <%= form_with(model: @documentary_film) do |form| %>
+        <!-- Campos del formulario -->
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :name %></div>
+          <div class="campo"><%= form.text_field :name %></div>
+          </div>
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :synopsis%></div>
+          <div class="campo"><%= form.text_area :synopsis %></div>
+          </div>
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :director%></div>
+          <div class="campo"><%= form.text_field :director %></div>
+          </div>
 
-  <%= form.label :director %>
-  <%= form.text_field :director %>
-
-  <!-- Botón de enviar -->
-  <%= form.submit "Enviar" %>
-  <%end %>
+          <div class="campos">
+            <!-- Botón de enviar -->
+            <%= form.submit "Enviar" %>
+            <%end %>
+          </div>
+      </div>
+    </div>
+</body>

@@ -1,18 +1,31 @@
-<h1>Ingresa datos de nueva Pelicula</h1>
-<br><br>
 
+<body class="movie">
+    <h1 class="TNmovie container w-75">Ingresa datos de nueva Pelicula</h1>
+    <br><br>
 
-<%= form_with(model: @movies) do |form| %>
-  <!-- Campos del formulario -->
-  <%= form.label :name %>
-  <%= form.text_field :name %>
+    <div class="container w-75">
+      
+      <div>
+        <%= form_with(model: @movies) do |form| %>
+        <!-- Campos del formulario -->
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :name %></div>
+          <div class="campo"><%= form.text_field :name %></div>
+          </div>
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :synopsis%></div>
+          <div class="campo"><%= form.text_area :synopsis %></div>
+          </div>
+          <div class="campos">
+          <div class="etiqueta"><%= form.label :director%></div>
+          <div class="campo"><%= form.text_field :director %></div>
+          </div>
 
-  <%= form.label :synopsis %>
-  <%= form.text_area :synopsis %>
-
-  <%= form.label :director %>
-  <%= form.text_field :director %>
-
-  <!-- Botón de enviar -->
-  <%= form.submit "Enviar" %>
-  <%end %>
+          <div class="campos">
+            <!-- Botón de enviar -->
+            <%= form.submit "Enviar" %>
+            <%end %>
+          </div>
+      </div>
+    </div>
+</body>

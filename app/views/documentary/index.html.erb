@@ -1,11 +1,34 @@
-<h1>Documentary</h1>
+<body class="documentary-body-index">
 
-<ul>
-  <% @documentary_films.each do |documentary| %>
-    <li>
-      <strong>Nombre:</strong> <%= documentary_film.name %>
-      <strong>Sinopsis:</strong> <%= documentary_film.synopsis %>
-      <strong>Director:</strong> <%= documentary_film.director %>
-    </li>
-  <% end %>
-</ul>
+<div class="titulo-seccion mt-0">
+    <div class="tdocumentary container-fluid text-center pt-3">
+    
+      <div><i class="fa-solid fa-clapperboard fa-2x icono-documentary d-inline"></i>
+      <h1 class="titulo-documentary-index d-inline container">Lista de Documentales</h1></div>
+    </div>
+</div>
+
+
+  <div class="container">
+    <div>
+      <table class="table">
+        <thead>
+          <tr>
+          <th scope="col">Título</th>
+          <th scope="col">Synopsis</th>
+          <th scope="col">Director</th>
+          </tr>
+        </thead>
+        <tbody class="texto-body">
+          <% @documentary_films.each do |documentary| %>
+          <tr>
+            <td><%= documentary.name %></td>
+            <td><%= documentary.synopsis %></td>
+            <td><%= documentary.director %></td>
+          </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>

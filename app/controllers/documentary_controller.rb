@@ -1,15 +1,15 @@
 class DocumentaryController < ApplicationController
 
   def index
-    @documentary_film = Documentary_film.all
+    @documentary_films = DocumentaryFilm.all
   end
   
   def new
-    @documentary_film = Documentary_film.new
+    @documentary_films = DocumentaryFilm.new
   end
 
   def create
-    @documentary_film = Documentary_film.new(documentary_film_params)
+    @documentary_films = DocumentaryFilm.new(documentary_film_params)
 
     if @documentary_film.save
       redirect_to documentary_index_path
